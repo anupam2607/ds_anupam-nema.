@@ -50,7 +50,7 @@ The analysis covers:
    - Segment-level analysis
 
 ## How to Run
-1. Open `notebook_1[1].ipynb` in Jupyter Notebook, JupyterLab, or VSCode.
+1. Open `notebook_1.ipynb` in Jupyter Notebook, JupyterLab, or VSCode.
 2. Place `fear_greed_index.csv` and `historical_data (1).xlsb` in the working directory.
 3. Run all notebook cells to reproduce the full analysis and generate the output files.
 
