@@ -1,75 +1,64 @@
-Data Science Assignment — Web3 Trading Team
-Candidate
-Anupam Nema
+# Data Science Assignment — Web3 Trading Team
 
-Overview
-This project analyzes the relationship between Bitcoin market sentiment (Fear vs Greed) and trader performance using historical trading data from Hyperliquid.
+**Candidate:** Anupam Nema
 
-The workflow includes:
+## Overview
+This project explores the relationship between Bitcoin market sentiment (Fear vs Greed) and trader performance using historical trading data from Hyperliquid.
 
-Cleaning and merging the Fear/Greed index with trader execution data.
+The analysis covers:
+- Data cleaning and preprocessing for both datasets.
+- Merging the Bitcoin Fear/Greed Index with trader execution data.
+- Exploratory Data Analysis (EDA) and visualization of performance patterns.
+- Statistical testing of performance differences between sentiment regimes.
+- Actionable insights for trading strategy optimization.
 
-Performing exploratory data analysis (EDA) and visualizations.
+## Files in This Repository
 
-Generating summary statistics and insights to inform trading strategies.
+1. **README.md**
+   Documentation describing the project, methodology, and files.
 
-Files in This Repository
-1. README.md
-This documentation file describing the project, data, and files.
+2. **avg_pnl_by_sentiment.png**
+   Visualization showing the average Closed PnL by market sentiment classification.
 
-2. avg_pnl_by_sentiment.png
-A visualization showing the average Closed PnL for Fear vs Greed periods.
+3. **ds_report.pdf**
+   Final detailed report including methodology, EDA results, statistical findings, and recommendations.
 
-3. ds_report.pdf
-Final report summarizing methodology, analysis steps, key findings, and conclusions.
+4. **fear_greed_index.csv**
+   Dataset containing Bitcoin market sentiment with columns:
+   - `date` — Date of observation
+   - `value` — Numeric sentiment score
+   - `classification` — Sentiment label (Fear, Extreme Fear, Greed, Extreme Greed)
 
-4. fear_greed_index.csv
-Bitcoin market sentiment dataset with columns:
+5. **historical_data (1).xlsb**
+   Historical trader execution dataset from Hyperliquid with fields:
+   - `account` — Trader account ID
+   - `symbol` — Asset traded
+   - `execution_price`, `size`, `side` — Trade details
+   - `closedPnL` — Profit/Loss for the trade
+   - `leverage` — Leverage used
+   - `time`, `event`, `start_position` — Additional trade metadata
 
-date
+6. **merged_data (2).xlsb**
+   Dataset created by merging historical trader data with the sentiment dataset for analysis.
 
-value (numeric sentiment score)
+7. **notebook_1[1].ipynb**
+   Jupyter notebook implementing the complete analysis workflow:
+   - Data loading and cleaning
+   - Dataset merging
+   - EDA and visualization
+   - Statistical testing
+   - Segment-level analysis
 
-classification (Fear, Extreme Fear, Greed, Extreme Greed)
+## How to Run
+1. Open `notebook_1[1].ipynb` in Jupyter Notebook, JupyterLab, or VSCode.
+2. Place `fear_greed_index.csv` and `historical_data (1).xlsb` in the working directory.
+3. Run all notebook cells to reproduce the full analysis and generate the output files.
 
-5. historical_data (1).xlsb
-Historical trader data from Hyperliquid containing:
+## Key Findings
+- **Fear Days**: Lower average Closed PnL, suggesting more defensive or loss-prone trading behavior.
+- **Greed Days**: Higher average Closed PnL, indicating more aggressive and often more profitable trades.
+- **Leverage Impact**: High leverage amplifies the sentiment effect — gains in Greed periods, losses in Fear periods.
+- **Position Size Effect**: Larger trades tend to be more sensitive to sentiment shifts.
 
-Account details
-
-Trade metadata (symbol, execution_price, size, side, etc.)
-
-Performance metrics (closedPnL, leverage, etc.)
-
-6. merged_data (2).xlsb
-The merged dataset combining trader data with sentiment labels for analysis.
-
-7. notebook_1[1].ipynb
-Jupyter notebook containing the full analysis pipeline:
-
-Data loading and cleaning
-
-Merging datasets
-
-EDA and visualization
-
-Statistical testing
-
-Segmentation analysis
-
-How to Run
-Open the Jupyter notebook (notebook_1[1].ipynb) in JupyterLab or VSCode.
-
-Ensure the datasets (fear_greed_index.csv and historical_data (1).xlsb) are in the working directory.
-
-Run all cells to reproduce the analysis and visualizations.
-
-Key Findings
-Fear Days: Lower average Closed PnL, indicating more cautious or loss-prone behavior.
-
-Greed Days: Higher average Closed PnL, indicating more aggressive and potentially profitable trading.
-
-Leverage levels and position sizes significantly impact the effect of sentiment on performance.
-
-Author
-Anupam Nema
+## Author
+**Anupam Nema**
