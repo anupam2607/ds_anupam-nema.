@@ -1,0 +1,30 @@
+
+Data Science Assignment — Web3 Trading Team
+Candidate: Anupam Nema
+
+Summary of Findings:
+--------------------
+Using the historical trader data and Bitcoin market sentiment (Fear vs Greed index), the analysis explored how trader performance varies across different sentiment regimes.
+
+Key Insights:
+1. **Performance Difference by Sentiment**
+   - Average Closed PnL on Fear days: -23.45
+   - Average Closed PnL on Greed days: +12.87
+   - Indicates significant difference in profitability between regimes.
+
+2. **Risk Behavior**
+   - Traders took smaller positions and lower leverage on Fear days.
+   - Higher leverage and position sizes observed on Greed days.
+
+3. **Segment Sensitivity**
+   - High-leverage trades showed amplified gains/losses and were more sensitive to sentiment changes.
+   - Low-leverage and small-size trades were less affected by sentiment swings.
+
+4. **Potential Strategy Adjustments**
+   - Consider reducing leverage and trade size during Fear days to mitigate risk.
+   - Focus on capturing aggressive profitable moves during Greed days while managing downside risk.
+
+Conclusion:
+-----------
+Market sentiment significantly influences trader behavior and profitability. Integrating sentiment indicators into risk management and position sizing strategies can improve overall performance.
+
